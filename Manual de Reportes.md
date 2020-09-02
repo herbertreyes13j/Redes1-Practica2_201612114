@@ -29,3 +29,12 @@
   
   - PC6 - Switch
   ![alt text](imagenes/paquete6.PNG "Title")
+
+  - Router - Switch 1
+  ![alt text](imagenes/paquete7.PNG "Title")
+  
+  - Router - Switch 2
+  ![alt text](imagenes/paquete8.PNG "Title")
+  
+  - Router - Switch 3
+  ![alt text](imagenes/paquete9.PNG "Title") 
