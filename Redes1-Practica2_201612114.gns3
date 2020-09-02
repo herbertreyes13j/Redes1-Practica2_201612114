@@ -724,7 +724,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5000,
+                "console": 5013,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
