@@ -29,7 +29,7 @@ Las configuraciones necesarias para poder realizar esta practica, seran mostrada
 
   - Paso 5
   Procedemos a configurar la maquina virtual, solamente accedemos a panel de control luego network y en IP Address le asignamos la direccion IP: 192.168.12.135, configuramos el gateway que seria 192.168.12.129 y la mascara de subred que seria 255.255.255.192 y le damos en apply para ver que los cambios de han guardado. 
-![alt text](imagenes/pc6.png "Title")
+![alt text](imagenes/pc6.PNG "Title")
 
   - Paso 6
   Procedemos a configurar VPC1, el comando a  utilizar es: ip direccion_ip/mascara_subred gateway, en el caso de esta seria 192.168.12.13/26 192.168.12.1 
@@ -45,11 +45,11 @@ Las configuraciones necesarias para poder realizar esta practica, seran mostrada
 
   - Paso 9
   Procedemos a configurar VPC4, el comando a  utilizar es: ip direccion_ip/mascara_subred gateway, en el caso de esta seria 192.168.12.74/26 192.168.12.65 
-![alt text](imagenes/pc4.png "Title")
+![alt text](imagenes/pc4.PNG "Title")
 
   - Paso 10
   Procedemos a configurar VPC5, el comando a  utilizar es: ip direccion_ip/mascara_subred gateway, en el caso de esta seria 192.168.12.100/26 192.168.12.65 
-![alt text](imagenes/pc5.png "Title")
+![alt text](imagenes/pc5.PNG "Title")
 
   - Conclusion
  Finalmente ya tenemos la topologia completa, lista para que se tenga comunicacion entre las computadoras. 
