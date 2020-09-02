@@ -7,36 +7,49 @@ Las configuraciones necesarias para poder realizar esta practica, seran mostrada
 ## Configuración de la topologia
   - Paso 1
   Armamos la topologia como se muestra a continuacion, para luego poder ir realizando las diferentes configuraciones que se describiran. 
-  ![alt text](imagenes/topo.PNG "Title")
+  ![alt text](imagenes/Topo.PNG "Title")
+  
   - Paso 2
   Procedemos con la configuracion del router, para esto vamos a configurar las interfaces. Los comandos a ingresar son:
     * conf t <--- para iniciar en modo de configuracion
     * int f0/0 <-------- Para seleccionar la interfaz a asignarle la ip
-    * ip address 192.168.14.254 255.255.255.0 <---- definimos la direccion ip 
+    * ip address 192.168.12.1 255.255.255.192 <---- definimos la direccion ip 
     * no shut
     * exit <------ salimos del modo de configuracion
     * rw <------ sirve para guardar todos los cambios
     * sh run 
-![alt text](Imagenes/F0_0.png "Title")
+![alt text](imagenes/f0_0.png "Title")
   - Paso 3
-  Realizamos lo mismo que en el paso 2, solamente que se cambia a int f0/1 y la direccion ip seria 192.168.11.254 255.255.255.0
-![alt text](Imagenes/F0_1.png "Title")
+  Realizamos lo mismo que en el paso 2, solamente que se cambia a int f0/1 y la direccion ip seria 192.168.12.65 255.255.255.192
+![alt text](imagenes/f0_1.png "Title")
+
   - Paso 4
-  Procedemos a configurar la maquina virtual, solamente accedemos a panel de contorl luego network y en IP Address le asignamos la direccion IP: 192.168.14.30 y le damos en apply para ver que los cambios de han guardado. 
-![alt text](Imagenes/Linux1.png "Title")
+  Realizamos lo mismo que en el paso 2, solamente que se cambia a int f1/0 y la direccion ip seria 192.168.12.129 255.255.255.192
+![alt text](imagenes/f1_0.png "Title")
 
   - Paso 5
-  Procedemos a configurar VPC2, el comando a  utilizar es: ip direccion_ip/mascara_subred gateway, en el caso de esta seria 192.168.14.15/24 192.168.14.254. 
-![alt text](Imagenes/VPC2.png "Title")
+  Procedemos a configurar la maquina virtual, solamente accedemos a panel de control luego network y en IP Address le asignamos la direccion IP: 192.168.12.135, configuramos el gateway que seria 192.168.12.129 y la mascara de subred que seria 255.255.255.192 y le damos en apply para ver que los cambios de han guardado. 
+![alt text](imagenes/pc6.png "Title")
 
   - Paso 6
-  Procedemos a configurar VPC3, el comando a  utilizar es: ip direccion_ip/mascara_subred gateway, en el caso de esta seria 192.168.11.15/24 192.168.11.254. 
-![alt text](Imagenes/VPC3.png "Title")
+  Procedemos a configurar VPC1, el comando a  utilizar es: ip direccion_ip/mascara_subred gateway, en el caso de esta seria 192.168.12.13/26 192.168.12.1 
+![alt text](imagenes/pc1.png "Title")
 
   - Paso 7
-  Procedemos a configurar VPC4, el comando a  utilizar es: ip direccion_ip/mascara_subred gateway, en el caso de esta seria 192.168.11.30/24 192.168.11.254. 
-![alt text](Imagenes/VPC4.png "Title")
+  Procedemos a configurar VPC2, el comando a  utilizar es: ip direccion_ip/mascara_subred gateway, en el caso de esta seria 192.168.12.22/26 192.168.12.1 
+![alt text](imagenes/pc2.png "Title")
 
   - Paso 8
- Finalmente procedemos al respectivo Ping, para comprobar que la configuracion fue hecha de forma correcta. 
-![alt text](Imagenes/Ping.PNG "Title")
+  Procedemos a configurar VPC3, el comando a  utilizar es: ip direccion_ip/mascara_subred gateway, en el caso de esta seria 192.168.12.69/26 192.168.12.65 
+![alt text](imagenes/pc3.png "Title")
+
+  - Paso 9
+  Procedemos a configurar VPC4, el comando a  utilizar es: ip direccion_ip/mascara_subred gateway, en el caso de esta seria 192.168.12.74/26 192.168.12.65 
+![alt text](imagenes/pc4.png "Title")
+
+  - Paso 10
+  Procedemos a configurar VPC5, el comando a  utilizar es: ip direccion_ip/mascara_subred gateway, en el caso de esta seria 192.168.12.100/26 192.168.12.65 
+![alt text](imagenes/pc5.png "Title")
+
+  - Conclusion
+ Finalmente ya tenemos la topologia completa, lista para que se tenga comunicacion entre las computadoras. 
